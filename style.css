@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gridcontainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    font-size: 4rem;
+}
+
+.maincontent {
+    background-color: rgb(255, 179, 152);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+.square {
+    align-self: center;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid blue;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.player1, .player2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+    align-self: center;
+}
+
+.nameinput1, .nameinput2 {
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.markerselection1, .markerselection2 {
+    grid-row: 2/3;
+    background-color: white;
+    width: 300px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 5px;
+}
+
+.ready1, .ready2 {
+    grid-row: 2 / 3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.ready1:hover, .ready2:hover {
+    background-color: coral;
+    color: black;
+}
+
+.footer {
+    background-color: white;
+    font-size: 2rem;
+}
