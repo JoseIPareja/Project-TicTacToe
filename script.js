@@ -125,7 +125,7 @@ function endGame(draw) {
     if (draw) {
         endingmessage.innerText = 'Draw!'
     } else {
-        endingmessage.innerText = `${player1turn ? player1.name : player2.name}  wins!`
+        endingmessage.innerText = `${player1turn ? player2.name : player1.name}  wins!`
     }
     message.classList.add('show');
 }
@@ -134,3 +134,20 @@ const cellElements = document.querySelectorAll('[data-cell]');
 cellElements.forEach(cell => {
     cell.addEventListener('click', play, {once: true})
 });
+
+// ----------------------------------------------
+
+// RESTART THE GAME
+const restartbtn = document.querySelector('#restartButton');
+
+restartbtn.addEventListener('click', restart);
+
+function restart() {
+    message.classList.remove('show');
+    player1turn = false;
+    cellElements.forEach(cell => {
+        cell.classList.remove(player1.mark);
+        cell.classList.remove(player2.mark);
+        cell.addEventListener('click', play, {once: true})
+    })
+}
