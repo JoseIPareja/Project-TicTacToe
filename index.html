@@ -12,15 +12,15 @@
     <div class="gridcontainer">
         <div class="header">Tic Tac Toe</div>
         <div class="maincontent">
-            <div class="player1">
+            <form class="player1">
                 <input class="nameinput1" type="text" placeholder="Player 1" required>
                 <div class="markerselection1">
-                    <button type="button" class="p1sel1"></button>
-                    <button type="button" class="p1sel2"></button>
-                    <button type="button" class="p1sel3"></button>
+                    <input type="button" class="p1sel1" id="p1sel1">
+                    <input type="button" class="p1sel2" id="p1sel2">
+                    <input type="button" class="p1sel3" id="p1sel3">
                 </div>
                 <button type="button" class="ready1">Ready</button>
-            </div>
+            </form>
             <div class="square" id="square">
                     <div class="cell" data-cell></div>
                     <div class="cell" data-cell></div>
@@ -35,9 +35,9 @@
             <div class="player2">
                 <input class="nameinput2" type="text" placeholder="Player 2" required>
                 <div class="markerselection2">
-                    <button type="button" class="p2sel1"></button>
-                    <button type="button" class="p2sel2"></button>
-                    <button type="button" class="p2sel3"></button>
+                    <button type="button" class="p2sel1" id="p2sel1"></button>
+                    <button type="button" class="p2sel2" id="p2sel2"></button>
+                    <button type="button" class="p2sel3" id="p2sel3"></button>
                 </div>
                 <button type="button" class="ready2">Ready</button>
             </div>
