@@ -75,6 +75,11 @@ body {
     color: black;
 }
 
+.nameinput1:focus, .nameinput2:focus {
+    background-color: rgb(58, 2, 161);
+    color: white;
+}
+
 .markerselection1, .markerselection2 {
     grid-row: 2/3;
     background-color: black;
@@ -102,6 +107,10 @@ body {
 .footer {
     background-color: rgb(58, 2, 161);
     font-size: 2rem;
+}
+
+.final-message {
+    font-size: 4rem;
 }
 
 .ending-message {
@@ -145,12 +154,20 @@ body {
     filter: invert(77%) sepia(96%) saturate(1995%) hue-rotate(356deg) brightness(101%) contrast(109%);
 }
 
+.p1sel1:hover {
+    transform: scale(1.03, 1.03);
+}
+
 .p1sel2 {
     background: url(img/ghost.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     filter: invert(18%) sepia(91%) saturate(3915%) hue-rotate(286deg) brightness(105%) contrast(129%);
+}
+
+.p1sel2:hover {
+    transform: scale(1.03, 1.03);
 }
 
 .p1sel3 {
@@ -161,12 +178,20 @@ body {
     filter: invert(74%) sepia(98%) saturate(281%) hue-rotate(120deg) brightness(93%) contrast(100%);
 }
 
+.p1sel3:hover {
+    transform: scale(1.03, 1.03);
+}
+
 .p2sel1 {
     background: url(img/ghost2.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     filter: invert(9%) sepia(100%) saturate(6366%) hue-rotate(240deg) brightness(109%) contrast(129%);
+}
+
+.p2sel1:hover {
+    transform: scale(1.03, 1.03);
 }
 
 .p2sel2 {
@@ -177,10 +202,18 @@ body {
     filter: invert(22%) sepia(63%) saturate(7434%) hue-rotate(356deg) brightness(102%) contrast(130%);
 }
 
+.p2sel2:hover {
+    transform: scale(1.03, 1.03);
+}
+
 .p2sel3 {
     background: url(img/ghost2.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     filter: invert(75%) sepia(48%) saturate(2069%) hue-rotate(41deg) brightness(109%) contrast(108%);
+}
+
+.p2sel3:hover {
+    transform: scale(1.03, 1.03);
 }
